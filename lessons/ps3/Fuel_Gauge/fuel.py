@@ -37,9 +37,9 @@ def calculate_gas(numerator, denominator):
     percent = int(round(int(numerator) / int(denominator), 2)*100)
     #print(round(int(numerator) / int(denominator), 2))
     #print(int(numerator) / int(denominator))
-    if percent == 100:
+    if percent >= 99:
         print("F")
-    elif percent == 0:
+    elif percent <= 1:
         print("E")
     else:
         print(f"{percent}%")
