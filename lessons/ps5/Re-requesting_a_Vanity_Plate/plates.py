@@ -1,11 +1,11 @@
-def is_valid(vanity_plate):
-    if not 2 <= len(vanity_plate) <=6:
+def is_valid(s):
+    if not 2 <= len(s) <=6:
         return False
-    if vanity_plate[0].isalpha() != True or vanity_plate[1].isalpha() != True:
+    if s[0].isalpha() != True or s[1].isalpha() != True:
          return False
     
     numbers = []
-    for char in vanity_plate:
+    for char in s:
        if char in ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", 
                    "+", "?", "_", "=", ",", "<", ">", "/", ".", " "]:
            return False
